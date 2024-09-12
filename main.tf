@@ -1,4 +1,4 @@
-# main.tf
+
 
 # Create an EC2 Key Pair
 resource "aws_key_pair" "my_key_pair" {
@@ -208,43 +208,4 @@ output "instance_1_id" {
 
 output "instance_2_id" {
   value = aws_instance.web_server_b.id
-}
-
-resource "aws_s3_bucket" "terraform_state" {
-  bucket = "my-terraform-state-ec2rds120924"
-  acl    = "private"
-
-  versioning {
-    enabled = true
-  }
-
-  tags = {
-    Name = "TerraformStateBucket"
-  }
-}
-
-resource "aws_dynamodb_table" "terraform_lock" {
-  name         = "terraform-lock"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "LockID"
-
-  attribute {
-    name = "LockID"
-    type = "S"
-  }
-
-  tags = {
-    Name = "TerraformLockTable"
-  }
-}
-
-
-terraform {
-  backend "s3" {
-    bucket         = "my-terraform-state-ec2rds" # Replace with your bucket name
-    key            = "terraform/state.tfstate"   # Path to the state file within the bucket
-    region         = "us-east-1"                 # AWS region of the S3 bucket
-    encrypt        = true                        # Optional: Enable server-side encryption
-    dynamodb_table = "terraform-lock"            # Optional: Name of the DynamoDB table for state locking
-  }
 }

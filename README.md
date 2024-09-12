@@ -1,5 +1,8 @@
 # 🌟 Terraform AWS EC2 RDS Setup
+<<<<<<< HEAD
 
+=======
+>>>>>>> c732bd65307fbb69a23172ff4e265e361e299fe8
 ---
 This repository contains Terraform configuration files to set up a basic AWS infrastructure. It provisions a VPC, subnets, EC2 instances, an RDS instance, and necessary networking components.
 
@@ -31,9 +34,15 @@ This Terraform setup includes:
 
 ### 📂 Files
 
+<<<<<<< HEAD
 - **[main.tf](https://github.com/prudvikeshav/terraform-ec2-rds-setup/blob/main/main.tf)**: Contains the primary Terraform configuration, including resource definitions.
 - **[variables.tf](https://github.com/prudvikeshav/terraform-ec2-rds-setup/blob/main/variables.tf)**: Defines the variables used in the Terraform configuration.
 - **[terraform.tfvars](https://github.com/prudvikeshav/terraform-ec2-rds-setup/blob/main/variables.tf)**: Contains the values for the variables.
+=======
+- **`main.tf`**: Contains the primary Terraform configuration, including resource definitions.
+- **`variables.tf`**: Defines the variables used in the Terraform configuration.
+- **`terraform.tfvars`**: Contains the values for the variables.
+>>>>>>> c732bd65307fbb69a23172ff4e265e361e299fe8
 
 ### 🔧 Variables
 
@@ -100,4 +109,10 @@ After applying the Terraform configuration, the following outputs will be availa
 
 ## 📜 License
 
+<<<<<<< HEAD
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/prudvikeshav/terraform-ec2-rds-setup/blob/main/LICENSE) file for details.
+=======
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+>>>>>>> c732bd65307fbb69a23172ff4e265e361e299fe8

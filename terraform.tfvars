@@ -1,4 +1,5 @@
 # terraform.tfvars
+# terraform.tfvars
 
 vpc_cidr_block      = "10.1.0.0/16"
 subnet_a_cidr_block = "10.1.1.0/24"

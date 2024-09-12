@@ -100,4 +100,4 @@ After applying the Terraform configuration, the following outputs will be availa
 
 ## 📜 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/prudvikeshav/terraform-ec2-rds-setup/blob/main/LICENSE) file for details.

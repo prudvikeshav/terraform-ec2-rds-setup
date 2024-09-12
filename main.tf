@@ -1,5 +1,11 @@
 # main.tf
 
+# Create an EC2 Key Pair
+resource "aws_key_pair" "my_key_pair" {
+  key_name   = "my-ec2-key"
+  public_key = file("~/.ssh/id_rsa.pub") # Replace with the path to your public key
+}
+
 
 resource "aws_vpc" "my_app_vpc" {
   cidr_block           = var.vpc_cidr_block
